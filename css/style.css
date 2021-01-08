@@ -452,7 +452,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: auto;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 1.8rem;
