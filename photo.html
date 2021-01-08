@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт фотоприложеия Pink</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="pade-header__logo logo" href="index.html">
+      <img class="page-header__logo-pic" src="img/logo-mobile.png" width="75" height="22" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+    </a>
+
+    <nav class="top-menu">
+      <ul class="top-menu__list">
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="index.html">Главная</a>
+        </li>
+
+        <li class="top-menu__item">
+          <a class="top-menu__link">Фотографии</a>
+        </li>
+
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="form.html">Конкурс</a>
+        </li>
+
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav><!--/top-menu-->
+  </header><!--/page-header-->
+
+  <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
+
+  <div class="intro-photo intro">
+    <h2 class="intro__title">Фотографии пользователей</h2>
+  </div>
+
+  <div class="page-photo">
+      <h3 class="page-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic page-photo__pic--of-the-day" src="https://placehold.it/320x137" alt="Панорама дня" width="320" height="137">
+        <p class="page-photo__autor">Анна <time datetime="2020.06.21">(5 минут назад)</time></p>
+        <p class="page-photo__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="page-photo__like">Нравится: 215</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Левон <time datetime="2020.06.21">(5 часов назад)</time></p>
+        <p class="page-photo__text">Вчера он на луну летал, сегодня в руки в нам попал.</p>
+        <p class="page-photo__like">Нравится: 356</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Антон <time datetime="2020.06.21">(12 часов назад)</time></p>
+        <p class="page-photo__text">Соседи будут рады!</p>
+        <p class="page-photo__like">Нравится: 666</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Борис <time datetime="2020.06.21">(20 часов назад)</time></p>
+        <p class="page-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="page-photo__like">Нравится: 215</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Сергей <time datetime="2020.06.21">(25 часов назад)</time></p>
+        <p class="page-photo__text">Самая кубанская в мире!</p>
+        <p class="page-photo__like">Нравится: 4</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Максим <time datetime="2020.06.21">(40 часов назад)</time></p>
+        <p class="page-photo__text">Где снег-то?</p>
+        <p class="page-photo__like">Нравится: 150</p>
+      </div><!--/page-photo__item-->
+
+      <div class="page-photo__item">
+        <img class="page-photo__pic" src="https://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+        <p class="page-photo__autor">Надежда <time datetime="2020.06.21">(45 часов назад)</time></p>
+        <p class="page-photo__text">Всем GM и взаимные лайки!</p>
+        <p class="page-photo__like">Нравится: 2560</p>
+      </div><!--/page-photo__item-->
+  </div><!--/page-photo-->
+
+  <div class="upload">
+    <p class="upload__description">Затмите всех!</p>
+    <p class="upload__description">Выкладывайте все, что накопилось в телефоне!</p>
+
+    <img class="upload__pic" src="https://placehold.it/280x374" alt="Фото пользователя" width="280" height="374">
+
+    <div class="upload__range">
+      <span class="upload__range-crop"></span>
+      <span class="upload__range-contrast"></span>
+      <span class="upload__range-fill"></span>
+    </div>
+
+    <div class="upload__buttons">
+      <button class="upload__button-post button" type="submit">Запостить</button>
+      <button class="upload__button-cancel button" type="reset">Отмена</button>
+    </div>
+  </div><!--/upload-->
+    
+  <footer class="page-footer">
+    <a class="page-footer__logo logo" href="index.html">
+      <img class="page-footer__logo-pic" src="https://placehold.it/147x40" width="147" height="40"  alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+    </a>
+
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__twitter" href="#">twitter</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__fb" href="#">facebook</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__youtube" href="#">youtube</a>
+      </li>
+    </ul>
+
+    <div class="page-footer__copyright">
+      <p>Разработано <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+    </div>
+  </footer><!--/page-footer-->
+</body>
+</html>
