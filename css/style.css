@@ -322,7 +322,27 @@
   top: -321px;
   left: -258px;
   width: 836px;
-  border-spacing: 0; }
+  border-spacing: 0;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
+
+.price__table--first {
+  -webkit-transform: translateX(258px);
+          transform: translateX(258px);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
+
+.price__table--third {
+  -webkit-transform: translateX(-258px);
+          transform: translateX(-258px);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
 
 .price-table--hidden,
 .price-table__data--mobile-hidden {
