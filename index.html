@@ -159,22 +159,27 @@
   </div><!--/price-->
 
   <div class="contacts">
-    <p class="contacts__description">Остались вопросы?</p>
-    <p class="contacts__description">Свяжитесь с нами!</p>
-    <ul class="contacts__list">
-      <li class="contacts__item contacts__item--phone">
-        Звоните: <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
-      </li>
+    <div class="contacts__wrapper">
+      <p class="contacts__description">Остались вопросы?</p>
+      <p class="contacts__description">Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--phone">
+          <span>Звоните:</span><a class="contacts__link contacts__link--phone" href="tel:+78125556666">+7(812)555-66-66</a>
+        </li>
 
-      <li class="contacts__item contacts__item--mail">
-        Пишите: <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
-      </li>
+        <li class="contacts__item contacts__item--mail">
+          <span>Пишите:</span><a class="contacts__link" href="#">mail@htmlacademy.ru</a>
+        </li>
 
-      <li class="contacts__item contacts__item--address">
-        Приезжайте в гости: <address>ул. Большая Конюшенная, 19/8</address>
-      </li>
-    </ul>
-    <img class="contacts__map" src="https://placehold.it/320x645" alt="ул. Большая Конюшенная, 19/8" width="320" height="645">
+        <li class="contacts__item contacts__item--address">
+          <span>Приезжайте в гости:</span><address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+        </li>
+      </ul>
+    </div><!--/contacts__wrapper-->
+
+    <img class="contacts__map" src="img/contacts-map.png" alt="ул. Большая Конюшенная, 19/8" width="320" height="645">
+
+    <iframe class="contacts__map--ambded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715586535!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610153268229!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div><!--/contacts-->
 
   <footer class="page-footer page-footer--index-mobile">
