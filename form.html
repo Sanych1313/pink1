@@ -57,7 +57,7 @@
         <input class="form-user__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
       </div><!--/competition-form__user-->
 
-      <div class="competition__wrapper">
+      <div class="competition-form__wrapper">
         <fieldset class="competition-form__achievements form-achievements">
           <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
           <h4 class="form-achievements__title--mobile">Ваши безбашенные &nbsp; достижения в путешествии</h4>
@@ -86,13 +86,13 @@
         <legend class="form-contacts__title">Контактная иформация</legend>
 
         <label class="form-contacts__label" for="contacts-phone">Номер телефона</label>
-        <input type="tel" id="contacts-phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{7}">
+        <input class="form-contacts__input" type="tel" id="contacts-phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{7}">
 
         <label class="form-contacts__label" for="contacts-mail">Адрес почты</label>
-        <input type="email" id="contacts-mail" placeholder="Введите почту *" required>
+        <input class="form-contacts__input" type="email" id="contacts-mail" placeholder="Введите почту *" required>
       </fieldset><!--/competition-form__contacts-->
 
-      <div class="competition__wrapper">
+      <div class="competition-form__wrapper">
         <fieldset class="competition-form__apps form-apps">
           <legend class="form-apps__title">С каким приложением путешествовали?</legend>
           <h4 class="form-apps__title--mobile">С каким приложением путешествовали?</h4>
@@ -115,33 +115,37 @@
         <textarea class="form-emotion__text" name="emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset><!--/competition-form__emotion-->
 
-      <button class="competition-form__button" type="submit">Отправить форму</button>
-      <p class="competition-form__note"><span>*</span> &#8212; обязательные поля</p>
+      <div class="competition-form__wrapper-button">
+        <button class="competition-form__button" type="submit">Отправить форму</button>
+        <p class="competition-form__note"><span>*</span> &#8212; обязательные поля</p>
+      </div>
     </form><!--/competition__form-->
   </div><!--/competition-->
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="index.html">
-      <img class="page-footer__logo-pic" src="https://placehold.it/147x40" width="147" height="40" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
-    </a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo" href="index.html">
+        <img class="page-footer__logo-pic" src="img/logo-mobile-footer.png" width="147" height="40" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      </a>
 
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__twitter" href="#">twitter</a>
-      </li>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__twitter" href="#">twitter</a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__fb" href="#">facebook</a>
-      </li>
+        <li class="social__item">
+          <a class="social__link social__fb" href="#">facebook</a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__youtube" href="#">youtube</a>
-      </li>
-    </ul>
+        <li class="social__item">
+          <a class="social__link social__youtube" href="#">youtube</a>
+        </li>
+      </ul>
 
-    <div class="page-footer__copyright">
-      <p>Разработано <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
-    </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p> <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div><!--/<page-footer__wrapper>-->
   </footer><!--/page-footer-->
 
   <div class="popup-error popup">
