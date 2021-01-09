@@ -308,7 +308,7 @@
   padding-top: 454px;
   padding-bottom: 46px;
   background: linear-gradient(-184.5deg, #ffffff 17.3%, #f2f2f2 0%);
-  overflow-y: hidden; }
+  overflow: hidden; }
 
 .price__wrapper {
   position: relative;
