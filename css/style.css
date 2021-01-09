@@ -90,8 +90,10 @@
     margin-bottom: 30px; }
 
 .intro-photo {
-  padding-top: 30px;
-  padding-bottom: 84px; }
+  padding: 30px 0 84px; }
+
+.intro-form {
+  padding: 31px 0 55px; }
 
 .intro__pic-wrapper {
   position: relative;
@@ -516,6 +518,78 @@ th {
 .page-footer--index-mobile {
   display: none; }
 
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 0 42px; }
+
+.page-footer__logo {
+  margin-bottom: 37px; }
+
+.page-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  font-size: 0;
+  list-style: none; }
+
+.social__item:nth-child(2) {
+  margin: 0 13px; }
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 51px;
+  height: 51px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 3px solid #e9ebec;
+  border-radius: 50%; }
+
+.social__twitter {
+  background-image: url(../img/twitter.png); }
+
+.social__fb {
+  background-image: url(../img/facebook.png); }
+
+.social__youtube {
+  background-image: url(../img/youtube.png); }
+
+.page-footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  color: #283645; }
+
+.page-footer__copyright-text {
+  margin: 0;
+  margin-right: 13px; }
+
+.page-footer__copyright-link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+  background-image: url(../img/logo-htmlacademy-mobile.png);
+  background-repeat: no-repeat; }
+
 .page-photo__wrapper {
   margin: 0 auto;
   display: -webkit-box;
@@ -615,6 +689,205 @@ th {
 
 .upload__pic {
   display: block; }
+
+.upload__range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 41px 20px 65px; }
+
+.upload__range-crop {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/crop-active.png);
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.upload__range-fill {
+  display: block;
+  width: 48px;
+  height: 43px;
+  background-image: url(../img/fill.png);
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.upload__range-contrast {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/contrast.png);
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.upload__range-slider {
+  position: relative;
+  display: block;
+  width: 240px;
+  height: 14px;
+  margin-top: 35px; }
+  .upload__range-slider::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 240px;
+    height: 2px;
+    background-color: #000000; }
+  .upload__range-slider::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 35px;
+    width: 14px;
+    height: 14px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer; }
+
+.upload__buttons {
+  padding-bottom: 20px; }
+
+.upload__button-post {
+  margin-bottom: 12px;
+  color: #d22856;
+  border-color: #d22856;
+  cursor: pointer; }
+
+.upload__button-cancel {
+  color: #dddfe0;
+  border-color: #dddfe0;
+  cursor: pointer; }
+
+.competition__wrapper-title,
+.competition-form__user,
+.competition-form__achievements,
+.competition-form__contacts,
+.competition-form__apps,
+.competition-form__emotion {
+  width: 320px;
+  margin: 0 auto; }
+
+.competition__wrapper-title {
+  padding: 46px 15px 40px;
+  text-align: center; }
+
+.competition__wrapper {
+  background-color: #f2f2f2; }
+
+.competition__title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #283645;
+  line-height: 2.2; }
+
+.competition__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.competition-form__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px; }
+
+.form-user__label {
+  margin-left: 23px;
+  margin-bottom: 13px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #d22856; }
+
+.form-user__input {
+  margin-bottom: 22px;
+  padding: 20px;
+  width: 280px;
+  border: 2px solid #f2f2f2;
+  outline: none; }
+  .form-user__input::-webkit-input-placeholder {
+    color: #000000; }
+  .form-user__input::-moz-placeholder {
+    color: #000000; }
+  .form-user__input:-ms-input-placeholder {
+    color: #000000; }
+  .form-user__input::-ms-input-placeholder {
+    color: #000000; }
+  .form-user__input::placeholder {
+    color: #000000; }
+  .form-user__input:last-of-type {
+    margin-bottom: 43px; }
+  .form-user__input:hover {
+    border-color: #000000; }
+  .form-user__input:focus {
+    border-color: #d22856; }
+
+.competition-form__achievements {
+  padding: 37px 31px 0;
+  border: none; }
+  .competition-form__achievements [type="checkbox"] {
+    display: none; }
+
+.form-achievements__title {
+  display: none; }
+
+.form-achievements__title--mobile {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #d22856;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center; }
+
+.form-achievements__checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 63px;
+  margin-left: 58px;
+  color: #283645;
+  cursor: pointer; }
+  .form-achievements__checkbox:last-of-type {
+    margin-bottom: 52px; }
+  .form-achievements__checkbox::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -69px;
+    width: 39px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5; }
+
+input:checked + .form-achievements__checkbox::after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/tick.png);
+  background-repeat: no-repeat; }
 
 *,
 *::before,

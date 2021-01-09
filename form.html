@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a class="pade-header__logo logo" href="index.html">
-      <img class="page-header__logo-pic" src="img/logo-mobile.png" width="75" height="22" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      <img class="page-header__logo-pic" src="img/logo-mobile-header.png" width="75" height="22" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
     </a>
 
     <nav class="top-menu">
@@ -41,42 +41,46 @@
   </div>
 
   <div class="competition">
-    <h3 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</h3>
+    <div class="competition__wrapper-title">
+      <h3 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</h3>
+    </div>
 
     <form class="competition__form competition-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="competition-form__user form-user">
         <label class="form-user__label" for="user-surname">Фамилия:</label>
-        <input type="text" id="user-surname" placeholder="Укажите фамилию *" required>
+        <input class="form-user__input" type="text" id="user-surname" placeholder="Укажите фамилию *" required>
 
         <label class="form-user__label" for="user-name">Имя:</label>
-        <input type="text" id="user-name" placeholder="Введите ваше имя *" required>
+        <input class="form-user__input" type="text" id="user-name" placeholder="Введите ваше имя *" required>
 
         <label class="form-user__label" for="user-patronymi">Отчество:</label>
-        <input type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+        <input class="form-user__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
       </div><!--/competition-form__user-->
 
-      <fieldset class="competition-form__achievements form-achievements">
-        <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
-        <h4 class="form-achievements__title--mobile">Ваши безбашенные достижения в путешествии</h4>
+      <div class="competition__wrapper">
+        <fieldset class="competition-form__achievements form-achievements">
+          <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <h4 class="form-achievements__title--mobile">Ваши безбашенные &nbsp; достижения в путешествии</h4>
 
-        <input type="checkbox" id="selfie" name="selfie-with-shark" checked>
-        <label class="form-achievements__checkbox" for="selfie">Сделал селфи с акулой</label>
-       
-        <input type="checkbox" id="burnt" name="burnt-on-beach" checked>
-        <label class="form-achievements__checkbox" for="burnt">Обгорел на пляже</label>
+          <input type="checkbox" id="selfie" name="selfie-with-shark" checked>
+          <label class="form-achievements__checkbox" for="selfie">Сделал селфи с акулой</label>
+        
+          <input type="checkbox" id="burnt" name="burnt-on-beach" checked>
+          <label class="form-achievements__checkbox" for="burnt">Обгорел на пляже</label>
 
-        <input type="checkbox" id="movie-star" name="saw-movie-star">
-        <label class="form-achievements__checkbox" for="movie-star">Видел Чака Норриса</label>
+          <input type="checkbox" id="movie-star" name="saw-movie-star">
+          <label class="form-achievements__checkbox" for="movie-star">Видел Чака Норриса</label>
 
-        <input type="checkbox" id="souvenirs" name="bay-souvenirs">
-        <label class="form-achievements__checkbox" for="souvenirs">Накупил сувениров</label>
+          <input type="checkbox" id="souvenirs" name="bay-souvenirs">
+          <label class="form-achievements__checkbox" for="souvenirs">Накупил сувениров</label>
 
-        <input type="checkbox" id="tower" name="kept-tower">
-        <label class="form-achievements__checkbox" for="tower">Удержал башню</label>
+          <input type="checkbox" id="tower" name="kept-tower" checked>
+          <label class="form-achievements__checkbox" for="tower">Удержал башню</label>
 
-        <input type="checkbox" id="hotel" name="defeated-hotel" checked>
-        <label class="form-achievements__checkbox" for="hotel">Разгромил отель</label>
-      </fieldset><!--/competition-form__achievements-->
+          <input type="checkbox" id="hotel" name="defeated-hotel">
+          <label class="form-achievements__checkbox" for="hotel">Разгромил отель</label>
+        </fieldset><!--/competition-form__achievements-->
+      </div><!--/competition__wrapper-->
 
       <fieldset class="competition-form__contacts form-contacts">
         <legend class="form-contacts__title">Контактная иформация</legend>
@@ -88,19 +92,21 @@
         <input type="email" id="contacts-mail" placeholder="Введите почту *" required>
       </fieldset><!--/competition-form__contacts-->
 
-      <fieldset class="competition-form__apps form-apps">
-        <legend class="form-apps__title">С каким приложением путешествовали?</legend>
-        <h4 class="form-apps__title--mobile">С каким приложением путешествовали?</h4>
+      <div class="competition__wrapper">
+        <fieldset class="competition-form__apps form-apps">
+          <legend class="form-apps__title">С каким приложением путешествовали?</legend>
+          <h4 class="form-apps__title--mobile">С каким приложением путешествовали?</h4>
 
-        <input type="radio" id="iOS" name="travel-apps" value="iOS" checked>
-        <label class="form-apps__radio" for="iOS">Pink для iOS</label>
+          <input type="radio" id="iOS" name="travel-apps" value="iOS" checked>
+          <label class="form-apps__radio" for="iOS">Pink для iOS</label>
 
-        <input type="radio" id="Android" name="travel-apps" value="Android">
-        <label class="form-apps__radio" for="Android">Pink на Android</label>
+          <input type="radio" id="Android" name="travel-apps" value="Android">
+          <label class="form-apps__radio" for="Android">Pink на Android</label>
 
-        <input type="radio" id="Windows" name="travel-apps" value="Windows">
-        <label class="form-apps__radio" for="Windows">Windows Phone</label>
-      </fieldset><!--/competition-form__apps-->
+          <input type="radio" id="Windows" name="travel-apps" value="Windows">
+          <label class="form-apps__radio" for="Windows">Windows Phone</label>
+        </fieldset><!--/competition-form__apps-->
+      </div><!--/competition__wrapper-->
 
       <fieldset class="competition-form__emotion form-emotion">
         <legend class="form-emotion__title">Опишите свои эмоции</legend>
