@@ -42,12 +42,12 @@ pricePaginationItemSecond.addEventListener('click', function(evt) {
   pricePaginationItemSecond.classList.add('price__pagination-item--active');
   pricePaginationItemFirst.classList.remove('price__pagination-item--active');
   pricePaginationItemThird.classList.remove('price__pagination-item--active');
-})
+});
 
 pricePaginationItemThird.addEventListener('click', function(evt) {
   evt.preventDefault();
   pricePaginationItemThird.classList.add('price__pagination-item--active');
   pricePaginationItemFirst.classList.remove('price__pagination-item--active');
   pricePaginationItemSecond.classList.remove('price__pagination-item--active');
-})
+});
 
