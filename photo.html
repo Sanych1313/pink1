@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сайт фотоприложеия Pink</title>
+  <meta name="description" content="Фотоприложение Pink">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="pade-header__logo logo" href="index.html">
-      <picture>
-        <source media="(min-width: 660px)" srcset="img/logo-tablet-header.png">
-        <img class="page-header__logo-pic--index" src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
-      </picture>
-    </a>
+    <div class="page-header__wrapper">
+      <a class="pade-header__logo" href="index.html">
+        <picture class="page-header__logo-pic">
+          <source media="(min-width: 660px)" srcset="img/logo-tablet-header.png">
+          <img src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+        </picture>
+      </a>
+
+      <button class="page-header__button-close visually-hidden" type="button">Закрыть</button>
+    </div><!--/page-header__wrapper-->
 
     <nav class="top-menu">
       <ul class="top-menu__list">
@@ -161,10 +166,12 @@
     </div><!--/upload__wrapper-->
   </div><!--/upload__panel-->
     
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index-mobile">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo" href="index.html">
-        <img class="page-footer__logo-pic" src="img/logo-mobile-footer.png" width="147" height="40" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      <a class="page-footer__logo" href="index.html">
+        <picture class="page-footer__logo-pic">
+          <img src="img/logo-mobile-footer.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+        </picture>
       </a>
 
       <ul class="page-footer__social social">
@@ -182,7 +189,7 @@
       </ul>
 
       <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text">Разработано</p> <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="page-footer__copyright-text">Разработано</p><a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div><!--/page-footer__wrapper-->
   </footer><!--/page-footer-->

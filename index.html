@@ -4,58 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сайт фотоприложеия Pink</title>
+  <meta name="description" content="Фотоприложение Pink">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="pade-header__logo logo">
-      <picture>
-        <source media="(min-width: 660px)" srcset="img/logo-tablet-header.png">
-        <img class="page-header__logo-pic--index" src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
-      </picture>
-    </a>
+    <div class="page-header__panel-open">
+      <div class="page-header__wrapper">
+        <a class="pade-header__logo">
+          <picture class="page-header__logo-pic page-header__logo-pic--index">
+            <img src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+          </picture>
+        </a>
 
-    <nav class="top-menu">
-      <ul class="top-menu__list">
-        <li class="top-menu__item">
-          <a class="top-menu__link">Главная</a>
-        </li>
+        <button class="page-header__button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div><!--/page-header__wrapper-->
 
-        <li class="top-menu__item">
-          <a class="top-menu__link" href="photo.html">Фотографии</a>
-        </li>
+      <nav class="top-menu">
+        <ul class="top-menu__list">
+          <li class="top-menu__item">
+            <a class="top-menu__link">Главная</a>
+          </li>
 
-        <li class="top-menu__item">
-          <a class="top-menu__link" href="form.html">Конкурс</a>
-        </li>
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="photo.html">Фотографии</a>
+          </li>
 
-        <li class="top-menu__item">
-          <a class="top-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav><!--/top-menu-->
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="form.html">Конкурс</a>
+          </li>
+
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav><!--/top-menu-->
+    </div><!--/page-header__panel-open-->
+
+    <div class="page-header__panel-close">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <picture class="page-header__logo-pic page-header__logo-pic--index">
+            <img src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+          </picture>
+        </a>
+
+        <button class="page-header__button-open" type="button">
+          <span class="visually-hidden">Открыть</span>
+        </button>
+      </div><!--/page-header__container-->
+    </div><!--/intro__panel-close-->
   </header><!--/page-header-->
 
   <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
-
   <section class="intro-index intro">
-    <div class="container">
-      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+    <div class="intro__wrapper">
+      <div class="intro__container-top">
+        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
-      <div class="intro__pic-wrapper">
-        <picture>
-          <source media="(min-width: 660px)" srcset="img/intro-pic-hand-tablet.png">
-          <img class="intro__pic-hand" src="img/intro-pic-hand.png" alt="Фон рука с телефоном">
-        </picture>
+        <div class="intro__pic">
+          <picture class="intro__pic-hand">
+            <img src="img/intro-pic-hand.png" alt="Фон рука с телефоном">
+          </picture>
 
-        <picture>
-          <source media="(min-width: 660px)" srcset="img/intro-pic-photo-tablet.png">
-          <img class="intro__pic-photo" src="img/intro-pic-photo.png" alt="Фон фото в телефоне">
-        </picture>
-      </div>
+          <picture class="intro__pic-photo">
+            <img src="img/intro-pic-photo.png" alt="Фон фото в телефоне">
+          </picture>
+        </div>
+      </div><!--/intro__container-top-->
 
-      <div class="intro__wrapper">
+      <div class="intro__container-bottom">
         <a class="intro__button button"  href="#">Скачать приложение</a>
 
         <ul class="intro__apps">
@@ -73,10 +94,9 @@
         </ul>
 
         <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div><!--/intro__wrapper-->
-    </div><!--/container-->
+      </div><!--/intro__container-->
+    </div><!--/intro-wrapper-->
   </section><!--/intro-index-->
-</div>
 
   <div class="info">
     <div class="info__wrapper">
@@ -100,9 +120,19 @@
         </li>
       </ul><!--/info__list-->
 
-      <picture>
-        <source media="(min-width: 660px)" srcset="img/iphone-tablet.png; img/iphone-screen-tablet.png">
-        <img class="info__pic-phone" src="img/info-pic-phone.png" alt="Телефон на фоне">
+      <picture class="info__pic-phone--desktop">
+        <source media="(min-width: 660px)" srcset="img/iphone-tablet.png">
+        <img src="img/info-pic-phone.png" alt="Телефон на фоне">
+      </picture>
+
+      <picture class="info__pic-phone--desktop">
+        <source media="(min-width: 660px)" srcset="img/iphone-tablet.png">
+        <img src="img/info-pic-phone.png" alt="Телефон на фоне">
+      </picture>
+
+      <picture class="info__pic-phone">
+        <source media="(min-width: 660px)" srcset="img/iphone-tablet.png">
+        <img src="img/info-pic-phone.png" alt="Телефон на фоне">
       </picture>
     </div>
   </div><!--/info-->
@@ -193,14 +223,14 @@
         </li>
 
         <li class="contacts__item contacts__item--address">
-          <span>Приезжайте в гости:</span><address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+          <span>Приезжайте в гости:</span><address class="contacts__address">ул. Большая<br> Конюшенная, 19/8</address>
         </li>
       </ul>
     </div><!--/contacts__wrapper-->
 
-    <picture>
+    <picture class="contacts__map">
       <source media="(min-width: 660px)" srcset="img/contacts-map-tablet.png">
-      <img class="contacts__map" src="img/contacts-map.png" alt="ул. Большая Конюшенная, 19/8">
+      <img src="img/contacts-map.png" alt="ул. Большая Конюшенная, 19/8">
     </picture>
 
     <iframe class="contacts__map--ambded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715586535!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610153268229!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -208,8 +238,10 @@
 
   <footer class="page-footer page-footer--index-mobile">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo">
-        <img class="page-footer__logo-pic" src="img/logo-mobile-footer.png" width="147" height="40" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      <a class="page-footer__logo">
+        <picture class="page-footer__logo-pic">
+          <img src="img/logo-mobile-footer.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+        </picture>
       </a>
 
       <ul class="page-footer__social social">
@@ -227,7 +259,7 @@
       </ul>
 
       <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text">Разработано</p> <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="page-footer__copyright-text">Разработано</p><a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div><!--/page-footer__wrapper-->
   </footer><!--/page-footer-->

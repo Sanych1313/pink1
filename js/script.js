@@ -1,3 +1,37 @@
+//Назначаем переменные для меню
+
+var topMenu = document.querySelector('.page-header__panel-open');
+
+var topMenuButtonClose = document.querySelector('.page-header__button-close');
+
+var panelForMenu = document.querySelector('.page-header__panel-close');
+
+var topMenuButtonOpen = document.querySelector('.page-header__button-open');
+
+var introContainerTop = document.querySelector('.intro__container-top');
+
+var introTitle = document.querySelector('.intro__title');
+
+//Функции для открытия-закрытия меню
+
+topMenuButtonClose.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  topMenu.classList.add('menu--close');
+  panelForMenu.classList.add('menu--open');
+  introContainerTop.classList.add('intro__container-top--menu-not-active');
+  introTitle.classList.add('intro__title--menu-not-active');
+});
+
+topMenuButtonOpen.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  topMenu.classList.remove('menu--close');
+  panelForMenu.classList.remove('menu--open');
+  introContainerTop.classList.remove('intro__container-top--menu-not-active');
+  introTitle.classList.remove('intro__title--menu-not-active');
+});
+
+
+
 //Назначаем переменные для пагинации прайса
 
 var pricePaginationItemFirst = document.querySelector('.price__pagination-item--first');
